@@ -1,0 +1,19 @@
+{
+  "image": "sagemath/sagemath:latest",
+  "hostRequirements": {
+    "cpus": 4
+  },
+  "waitFor": "onCreateCommand",
+  "postCreateCommand": "/bin/bash .devcontainer/setup.sh",
+  "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "Lov3.sagemath-enhanced"
+      ]
+    }
+  }
+}
